@@ -19,11 +19,12 @@ while low <= high:
 
     elif feedback == "low":
         # The secret number is greater than the guess
-        low = guess + 1
+        high = guess - 1
+        
 
     elif feedback == "high":
         # The secret number is smaller than the guess
-        high = guess - 1
+        low = guess + 1
 
     else:
         print("Invalid input! Please enter low, high, or correct.")
